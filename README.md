@@ -1,4 +1,4 @@
-# `Nx`
+# Nx Monorepo
 
 > 📦 Nx practice repository
 
@@ -40,7 +40,7 @@ nx test products --watch
 nx는 캐싱 기능(로컬 캐싱)을 제공하고 있다.
 
 - 태스크 실행 명령어를 실행하면, 여러 방식의 설정 파일로부터 캐싱을 어떻게 하는지 체크한다.
-- **nx.json** **project.json** **packages.json** 등을 이용해서 설정한다.
+- **nx.json** / **project.json** / **packages.json** 등을 이용해서 설정한다.
 
 <br />
 
