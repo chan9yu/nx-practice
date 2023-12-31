@@ -1,0 +1,38 @@
+{
+	"name": "@nx-practice/root",
+	"private": true,
+	"version": "0.0.1",
+	"description": "📦 Nx practice repository",
+	"packageManager": "pnpm@8.13.1+sha256.9e5f62ce5f2b7d4ceb3c2848f41cf0b33032c24d683c7088b53f62b1885fb246",
+	"lint-staged": {
+		"**/*.{ts,tsx}": [
+			"eslint --fix",
+			"prettier --write",
+			"git add ."
+		]
+	},
+	"config": {
+		"commitizen": {
+			"path": "cz-conventional-changelog"
+		}
+	},
+	"scripts": {
+		"commit": "pnpm git-cz",
+		"prepare": "husky install",
+		"husky:permission": "chmod +x .husky/*"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^18.4.3",
+		"@commitlint/config-conventional": "^18.4.3",
+		"@typescript-eslint/eslint-plugin": "^6.16.0",
+		"@typescript-eslint/parser": "^6.16.0",
+		"commitizen": "^4.3.0",
+		"conventional-changelog-conventionalcommits": "^7.0.2",
+		"eslint": "^8",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-prettier": "^5.1.2",
+		"husky": "^8.0.3",
+		"lint-staged": "^15.2.0",
+		"prettier": "^3.1.1"
+	}
+}
