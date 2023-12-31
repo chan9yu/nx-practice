@@ -16,6 +16,13 @@
 		}
 	},
 	"scripts": {
+		"dev": "pnpm exec nx run-many -t dev",
+		"dev:my-app": "pnpm exec nx dev my-app",
+		"build": "pnpm exec nx run-many -t build",
+		"build:my-utils": "pnpm exec nx build my-utils",
+		"build:my-app": "pnpm exec nx build my-app",
+		"graph": "nx graph",
+		"graph:build": "nx run-many --target=build --graph",
 		"commit": "pnpm git-cz",
 		"prepare": "husky install",
 		"husky:permission": "chmod +x .husky/*"
@@ -32,6 +39,7 @@
 		"eslint-plugin-prettier": "^5.1.2",
 		"husky": "^8.0.3",
 		"lint-staged": "^15.2.0",
+		"nx": "^17.2.8",
 		"prettier": "^3.1.1",
 		"typescript": "^5.3.3"
 	}

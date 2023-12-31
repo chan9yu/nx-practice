@@ -3,6 +3,15 @@
 	"private": true,
 	"version": "0.0.1",
 	"description": "📦 Nx practice repository | my-app",
+	"nx": {
+		"targets": {
+			"build": {
+				"outputs": [
+					"{projectRoot}/.next/**/*"
+				]
+			}
+		}
+	},
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",

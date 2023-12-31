@@ -5,6 +5,15 @@
 	"description": "📦 Nx practice repository | my-utils",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
+	"nx": {
+		"targets": {
+			"build": {
+				"outputs": [
+					"{projectRoot}/dist/**/*"
+				]
+			}
+		}
+	},
 	"scripts": {
 		"build": "tsc"
 	},
