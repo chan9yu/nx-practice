@@ -12,6 +12,7 @@
 **/*.min.css
 **/build
 **/dist
+**/.next
 **/.nx
 
 # misc
